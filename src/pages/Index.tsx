@@ -22,30 +22,42 @@ const Index = () => {
     },
     {
       id: 3,
+      name: 'Люкс композиция',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/360c8b1c-2479-4360-90c4-fefa5d481d28.jpg',
+      description: 'Премиум-вариант с изысканной типографикой и балансом элементов'
+    },
+    {
+      id: 4,
+      name: 'Круглая эмблема',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/91b81ef6-544d-4264-9b42-9ad194fc15a9.jpg',
+      description: 'Круговой дизайн с цветочным венком и изогнутым текстом'
+    },
+    {
+      id: 5,
       name: 'Одна линия',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/3b457eb4-7696-4bea-bfc2-1903f0ce82c4.jpg',
       description: 'Непрерывная линия без отрыва, профиль одной стороны лица с цветами'
     },
     {
-      id: 4,
+      id: 6,
       name: 'Мягкие контуры',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/28b746ec-ea4d-4f25-a08f-43dc9578bdea.jpg',
       description: 'Нежные размытые контуры, наклонённая голова, цветы повторяют линии лица'
     },
     {
-      id: 5,
+      id: 7,
       name: 'Классический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/49a6e171-4129-4750-aa1f-436d134fd280.jpg',
       description: 'Сочетание изящности и профессионализма с чёткими контурами'
     },
     {
-      id: 6,
+      id: 8,
       name: 'Акварельный',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/09965bd2-095b-4c2b-b646-94dd051851c8.jpg',
       description: 'Нежные акварельные переходы с акцентом на цветочные элементы'
     },
     {
-      id: 7,
+      id: 9,
       name: 'Геометрический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/bb3579c8-dd62-4411-85eb-cc490771cc5e.jpg',
       description: 'Строгие линии и геометрия для современного образа'
@@ -91,7 +103,7 @@ const Index = () => {
 
             <div className="mt-6 space-y-4">
               <h3 className="text-xl font-bold text-primary">Выберите вариант</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-9 gap-3">
                 {logoVersions.map((version) => (
                   <Card 
                     key={version.id}
