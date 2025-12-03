@@ -10,78 +10,90 @@ const Index = () => {
   const logoVersions = [
     {
       id: 1,
+      name: 'С цветами и шприцем v1',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/3f44f0a7-1ffa-49fb-a465-69ef020e02f3.jpg',
+      description: 'Одна линия + розы, завитушки, шприц и текст "Cosmetology"'
+    },
+    {
+      id: 2,
+      name: 'С цветами и шприцем v2',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/828efc6e-9dcf-4888-b9ff-25ec97ded911.jpg',
+      description: 'Декоративные завитки, цветы вдоль контура и медицинский символ'
+    },
+    {
+      id: 3,
       name: 'Inhale/Exhale стиль v1',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/f0219f03-8c2c-4e78-b2be-3e75caed79a3.jpg',
       description: 'Одна непрерывная линия + текст справа, как в примере inhale/exhale'
     },
     {
-      id: 2,
+      id: 4,
       name: 'Inhale/Exhale стиль v2',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/97d8a05e-ff70-44aa-90e5-aecb921cb0e9.jpg',
       description: 'Минималистичная непрерывная линия с курсивным текстом'
     },
     {
-      id: 3,
+      id: 5,
       name: 'Лицо в шрифт v1',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/9b8a38a9-d6a0-484a-8579-c09302ad60f0.jpg',
       description: 'Силуэт лица плавно перетекает в буквы названия — инновационный дизайн'
     },
     {
-      id: 4,
+      id: 6,
       name: 'Лицо в шрифт v2',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/b95b2d47-6a8a-4d0c-951f-5a4c89a6bda1.jpg',
       description: 'Непрерывная линия трансформируется из портрета в типографику'
     },
     {
-      id: 5,
+      id: 7,
       name: 'Rita Nafikova v1',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/953ecbb2-ad3d-4d1b-a16c-bc347283c96d.jpg',
       description: 'Логотип с названием, минималистичная линия, элегантная типографика'
     },
     {
-      id: 6,
+      id: 8,
       name: 'Rita Nafikova v2',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/8910b867-e988-40ff-a58b-776a2775a9c2.jpg',
       description: 'Вариант с акварельными акцентами и изящной композицией'
     },
     {
-      id: 7,
+      id: 9,
       name: 'Люкс композиция',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/360c8b1c-2479-4360-90c4-fefa5d481d28.jpg',
       description: 'Премиум-вариант с изысканной типографикой и балансом элементов'
     },
     {
-      id: 8,
+      id: 10,
       name: 'Круглая эмблема',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/91b81ef6-544d-4264-9b42-9ad194fc15a9.jpg',
       description: 'Круговой дизайн с цветочным венком и изогнутым текстом'
     },
     {
-      id: 9,
+      id: 11,
       name: 'Одна линия',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/3b457eb4-7696-4bea-bfc2-1903f0ce82c4.jpg',
       description: 'Непрерывная линия без отрыва, профиль одной стороны лица с цветами'
     },
     {
-      id: 10,
+      id: 12,
       name: 'Мягкие контуры',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/28b746ec-ea4d-4f25-a08f-43dc9578bdea.jpg',
       description: 'Нежные размытые контуры, наклонённая голова, цветы повторяют линии лица'
     },
     {
-      id: 11,
+      id: 13,
       name: 'Классический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/49a6e171-4129-4750-aa1f-436d134fd280.jpg',
       description: 'Сочетание изящности и профессионализма с чёткими контурами'
     },
     {
-      id: 12,
+      id: 14,
       name: 'Акварельный',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/09965bd2-095b-4c2b-b646-94dd051851c8.jpg',
       description: 'Нежные акварельные переходы с акцентом на цветочные элементы'
     },
     {
-      id: 13,
+      id: 15,
       name: 'Геометрический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/bb3579c8-dd62-4411-85eb-cc490771cc5e.jpg',
       description: 'Строгие линии и геометрия для современного образа'
