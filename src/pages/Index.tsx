@@ -10,30 +10,42 @@ const Index = () => {
   const logoVersions = [
     {
       id: 1,
+      name: 'Rita Nafikova v1',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/953ecbb2-ad3d-4d1b-a16c-bc347283c96d.jpg',
+      description: 'Логотип с названием, минималистичная линия, элегантная типографика'
+    },
+    {
+      id: 2,
+      name: 'Rita Nafikova v2',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/8910b867-e988-40ff-a58b-776a2775a9c2.jpg',
+      description: 'Вариант с акварельными акцентами и изящной композицией'
+    },
+    {
+      id: 3,
       name: 'Одна линия',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/3b457eb4-7696-4bea-bfc2-1903f0ce82c4.jpg',
       description: 'Непрерывная линия без отрыва, профиль одной стороны лица с цветами'
     },
     {
-      id: 2,
+      id: 4,
       name: 'Мягкие контуры',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/28b746ec-ea4d-4f25-a08f-43dc9578bdea.jpg',
       description: 'Нежные размытые контуры, наклонённая голова, цветы повторяют линии лица'
     },
     {
-      id: 3,
+      id: 5,
       name: 'Классический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/49a6e171-4129-4750-aa1f-436d134fd280.jpg',
       description: 'Сочетание изящности и профессионализма с чёткими контурами'
     },
     {
-      id: 4,
+      id: 6,
       name: 'Акварельный',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/09965bd2-095b-4c2b-b646-94dd051851c8.jpg',
       description: 'Нежные акварельные переходы с акцентом на цветочные элементы'
     },
     {
-      id: 5,
+      id: 7,
       name: 'Геометрический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/bb3579c8-dd62-4411-85eb-cc490771cc5e.jpg',
       description: 'Строгие линии и геометрия для современного образа'
@@ -47,7 +59,7 @@ const Index = () => {
       <div className="container mx-auto px-4 py-12">
         <header className="text-center mb-12 animate-fade-in">
           <h1 className="text-6xl md:text-7xl font-bold text-primary mb-4 tracking-tight">
-            Логотип косметолога
+            Rita Nafikova Cosmetology
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Изящный дизайн с нежными тонами и тёмными акцентами
@@ -79,7 +91,7 @@ const Index = () => {
 
             <div className="mt-6 space-y-4">
               <h3 className="text-xl font-bold text-primary">Выберите вариант</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
                 {logoVersions.map((version) => (
                   <Card 
                     key={version.id}
