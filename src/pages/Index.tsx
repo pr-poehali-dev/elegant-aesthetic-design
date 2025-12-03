@@ -10,18 +10,24 @@ const Index = () => {
   const logoVersions = [
     {
       id: 1,
+      name: 'Мягкие контуры',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/28b746ec-ea4d-4f25-a08f-43dc9578bdea.jpg',
+      description: 'Нежные размытые контуры, наклонённая голова, цветы повторяют линии лица'
+    },
+    {
+      id: 2,
       name: 'Классический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/49a6e171-4129-4750-aa1f-436d134fd280.jpg',
       description: 'Сочетание изящности и профессионализма с чёткими контурами'
     },
     {
-      id: 2,
+      id: 3,
       name: 'Акварельный',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/09965bd2-095b-4c2b-b646-94dd051851c8.jpg',
       description: 'Нежные акварельные переходы с акцентом на цветочные элементы'
     },
     {
-      id: 3,
+      id: 4,
       name: 'Геометрический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/bb3579c8-dd62-4411-85eb-cc490771cc5e.jpg',
       description: 'Строгие линии и геометрия для современного образа'
@@ -67,7 +73,7 @@ const Index = () => {
 
             <div className="mt-6 space-y-4">
               <h3 className="text-xl font-bold text-primary">Выберите вариант</h3>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {logoVersions.map((version) => (
                   <Card 
                     key={version.id}
@@ -169,19 +175,19 @@ const Index = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex items-start gap-2">
                   <Icon name="CheckCircle2" size={16} className="mt-1 text-primary" />
-                  <span>Контуры женского лица с чёрными волосами</span>
+                  <span>Мягкие контуры без детализации черт лица</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <Icon name="CheckCircle2" size={16} className="mt-1 text-primary" />
-                  <span>Деликатные цветочные элементы</span>
+                  <span>Наклонённая голова с распущенными волосами</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <Icon name="CheckCircle2" size={16} className="mt-1 text-primary" />
-                  <span>Медицинский символ (шприц)</span>
+                  <span>Цветы повторяют контуры лица</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <Icon name="CheckCircle2" size={16} className="mt-1 text-primary" />
-                  <span>Изящный и немного грубый стиль</span>
+                  <span>Тонкий медицинский символ (шприц)</span>
                 </div>
               </div>
             </Card>
