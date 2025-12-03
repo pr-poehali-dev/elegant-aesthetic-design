@@ -129,7 +129,7 @@ const Index = () => {
                     <img 
                       src={version.url} 
                       alt={version.name}
-                      className="w-full aspect-square object-cover rounded-lg mb-2"
+                      className="w-full aspect-square rounded-lg mb-2 object-scale-down"
                     />
                     <p className="text-sm font-semibold text-center text-primary">{version.name}</p>
                   </Card>
