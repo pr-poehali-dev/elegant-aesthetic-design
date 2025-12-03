@@ -10,9 +10,21 @@ const Index = () => {
   const logoVersions = [
     {
       id: 1,
-      name: 'Основной вариант',
+      name: 'Классический',
       url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/49a6e171-4129-4750-aa1f-436d134fd280.jpg',
-      description: 'Сочетание изящности и профессионализма'
+      description: 'Сочетание изящности и профессионализма с чёткими контурами'
+    },
+    {
+      id: 2,
+      name: 'Акварельный',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/09965bd2-095b-4c2b-b646-94dd051851c8.jpg',
+      description: 'Нежные акварельные переходы с акцентом на цветочные элементы'
+    },
+    {
+      id: 3,
+      name: 'Геометрический',
+      url: 'https://cdn.poehali.dev/projects/b5d36ffb-0f13-431b-94ac-bfa35566f781/files/bb3579c8-dd62-4411-85eb-cc490771cc5e.jpg',
+      description: 'Строгие линии и геометрия для современного образа'
     }
   ];
 
@@ -52,6 +64,30 @@ const Index = () => {
                 )}
               </div>
             </Card>
+
+            <div className="mt-6 space-y-4">
+              <h3 className="text-xl font-bold text-primary">Выберите вариант</h3>
+              <div className="grid grid-cols-3 gap-4">
+                {logoVersions.map((version) => (
+                  <Card 
+                    key={version.id}
+                    className={`p-3 cursor-pointer transition-all hover:shadow-lg ${
+                      selectedVersion === version.id 
+                        ? 'bg-primary/10 border-2 border-primary' 
+                        : 'bg-white/60 backdrop-blur-sm hover:bg-white/80'
+                    }`}
+                    onClick={() => setSelectedVersion(version.id)}
+                  >
+                    <img 
+                      src={version.url} 
+                      alt={version.name}
+                      className="w-full aspect-square object-cover rounded-lg mb-2"
+                    />
+                    <p className="text-sm font-semibold text-center text-primary">{version.name}</p>
+                  </Card>
+                ))}
+              </div>
+            </div>
 
             <div className="mt-6 grid grid-cols-3 gap-4">
               <Card className="p-4 bg-white/60 backdrop-blur-sm hover:bg-white/80 transition-all">
